@@ -16,7 +16,7 @@ A real-time, AI-powered attendance system that leverages facial recognition and 
 
 ## 🗂️ Directory Structure
 
-``
+```
 Smart-Attendance-Management/
 ├── known_faces/
 │   ├── person1/
@@ -30,7 +30,7 @@ Smart-Attendance-Management/
 ├── last.pt
 ├── main.py
 └── README.md
-``
+```
 
 
 - **`known_faces/`** Directory containing subfolders for each person, with their respective image.
@@ -115,13 +115,13 @@ Attendance records are stored in `attendance.xlsx` with the following clumns:
 
 ## 🛠️ Dependenies
 
-- Pyton 36+
--OpeCV
--Toch
--Pandas
--FacenetPyToch
--Yolovv5
--openyxl
+-**Python**
+-**OpeCV**
+-**Toch**
+-**Pandas**
+-**FacenetPyToch**
+-**Yolovv5**
+-**openyxl**
 
 Install all dependencie usng:
 
