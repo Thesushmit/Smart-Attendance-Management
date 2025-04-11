@@ -1,6 +1,4 @@
-Certainly! Here's a comprehensive `README.md` file tailored for the [Smart-Attendance-Management](https://github.com/Thesushmit/Smart-Attendance-Management) project.
 
----
 
 # Smart Attendance Management System
 
