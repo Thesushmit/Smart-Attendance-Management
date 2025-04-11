@@ -115,13 +115,13 @@ Attendance records are stored in `attendance.xlsx` with the following clumns:
 
 ## 🛠️ Dependenies
 
--**Python**
--**OpeCV**
--**Toch**
--**Pandas**
--**FacenetPyToch**
--**Yolovv5**
--**openyxl**
+- **Python**
+- **OpeCV**
+- **Torch**
+- **Pandas**
+- **FacenetPyTorch**
+- **Yolovv5**
+- **Openyxl**
 
 Install all dependencie usng:
 
