@@ -16,7 +16,7 @@ A real-time, AI-powered attendance system that leverages facial recognition and 
 
 ## 🗂️ Directory Structure
 
-```plaintext
+``
 Smart-Attendance-Management/
 ├── known_faces/
 │   ├── person1/
@@ -31,7 +31,7 @@ Smart-Attendance-Management/
 ├── main.py
 └── README.md
 ``
-
+
 
 - **`known_faces/`** Directory containing subfolders for each person, with their respective image.
 - **`attendance.xlsx`** Excel file where attendance records are store.
@@ -42,11 +42,11 @@ Smart-Attendance-Management/
 
 1. **Clone the Repository**
 
-   ```bash
+   ``bash
    git clone https://github.com/Thesushmit/Smart-Attendance-Management.git
    cd Smart-Attendance-Management
    ``
-
+
 
 2. **Create a Virtual Environment (Optional but Recommended)**
 
@@ -54,14 +54,13 @@ Smart-Attendance-Management/
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ``
-
+
 
 3. **Install Dependencies**
 
    ```bash
    pip install -r requirements.txt
    ``
-
 
 4. **Download YOLOv5 Model**
 
@@ -73,8 +72,8 @@ Smart-Attendance-Management/
 
    ```bash
    python main.py
-  ```
-
+  ``
+
 
 2. **Select Option to Add New Student**
 
@@ -97,14 +96,14 @@ TIMETABLE = {
     'Thursday': [(9, 'OS'), (10, 'CN'), (11, 'ML'), (12, 'Lunch'), (13, 'Project'), (14, 'Project'), (15, 'Library')],
     'Friday': [(9, 'CN'), (10, 'OS'), (11, 'ML'), (12, 'Lunch'), (13, 'Project'), (14, 'ML'), (15, 'OS')]
 
-``
-
+```
 
-Modify this dictionary in `main.py` to match your institution's schdule.
+
+Modify this dictionary in `main.py` to match your institution's schdule.
 
 ## 📊 Attendance Loging
 
-Attendance records are stored in `attendance.xlsx` with the following clumns:
+Attendance records are stored in `attendance.xlsx` with the following clumns:
 
 - **Subjct**: Current subject based on the timtable.
 - **Entry Tme**: Time when the student was reconized.
