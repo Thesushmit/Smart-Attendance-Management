@@ -1,21 +1,21 @@
-Certainly! Here's a comprehensive `README.md` file tailored for the [Smart-Attendance-Management](https://github.com/Thesushmit/Smart-Attendance-Management) project.
+Certainly! Here's a comprehensive `README.md` file tailored for the [Smart-Attendance-Management](https://github.com/Thesushmit/Smart-Attendance-Management) project.
 
 ---
 
 # Smart Attendance Management System
 
-A real-time, AI-powered attendance system that leverages facial recognition and mask detection to automate attendance tracking. Built with Python, OpenCV, YOLOv5, and FaceNet, this system ensures accurate and efficient attendance management.
+A real-time, AI-powered attendance system that leverages facial recognition and mask detection to automate attendance tracking. Built with Python, OpenCV, YOLOv5, and FaceNet, this system ensures accurate and efficient attendance management.
 
 ## 📌 Features
 
-- **Real-Time Face Recognition**:Utilizes MTCNN for face detection and FaceNet for face recognition
-- **Mask Detection**:Integrates YOLOv5 to detect mask status—`with_mask`, `without_mask`, or `mask_weared_incorrect`
-- **Automated Attendance Logging**:Records attendance in an Excel file (`attendance.xlsx`) with details like subject, entry time, mask status, punctuality, and date
-- **Timetable Integration**:Determines the current subject based on a predefined timetable
-- **User-Friendly Interface**:Provides a command-line interface for taking attendance, clearing records, and adding new students
+- **Real-Time Face Recognition**:Utilizes MTCNN for face detection and FaceNet for face recognition
+- **Mask Detection**:Integrates YOLOv5 to detect mask status—`with_mask`, `without_mask`, or `mask_weared_incorrect`
+- **Automated Attendance Logging**:Records attendance in an Excel file (`attendance.xlsx`) with details like subject, entry time, mask status, punctuality, and date
+- **Timetable Integration**:Determines the current subject based on a predefined timetable
+- **User-Friendly Interface**:Provides a command-line interface for taking attendance, clearing records, and adding new students
 
 ## 🗂️ Directory Structure
-
+
 ``
 Smart-Attendance-Management/
 ├── known_faces/
@@ -33,10 +33,10 @@ Smart-Attendance-Management/
 ``
 
 
-- **`known_faces/`** Directory containing subfolders for each person, with their respective image.
-- **`attendance.xlsx`** Excel file where attendance records are store.
-- **`last.pt`** Pre-trained YOLOv5 model for mask detectio.
-- **`main.py`** Main script to run the attendance syste.
+- **`known_faces/`** Directory containing subfolders for each person, with their respective image.
+- **`attendance.xlsx`** Excel file where attendance records are store.
+- **`last.pt`** Pre-trained YOLOv5 model for mask detectio.
+- **`main.py`** Main script to run the attendance syste.
 
 ## 🚀 Installation
 
@@ -70,7 +70,7 @@ Smart-Attendance-Management/
 
 1. **Run the Script**
 
-   ```bash
+   ``bash
    python main.py
   ``
 
@@ -87,7 +87,7 @@ Smart-Attendance-Management/
 
 The system uses a predefined timetable to determine the current subject based on the day andtim.
 
-
+
 ```python
 TIMETABLE = {
     'Monday': [(9, 'OS'), (10, 'OS'), (11, 'ML'), (12, 'Lunch'), (13, 'CN'), (14, 'CN'), (15, 'ML')],
@@ -105,32 +105,32 @@ Modify this dictionary in `main.py` to match your institution's schdule.
 
 Attendance records are stored in `attendance.xlsx` with the following clumns:
 
-- **Subjct**: Current subject based on the timtable.
-- **Entry Tme**: Time when the student was reconized.
-- **Attendace**: `Present` or `Asent`.
-- **Msk**: Mask status (`with_mask`, `without_mask`, or `mask_weared_incorect`).
-- **On Tme**: Indicates if the student was on time (`Yes` or`No`).
-- **Person Nme**: Recognized name of the sudent.
-- **Dte**: Date of the attedance.
+- **Subjct**: Current subject based on the timtable.
+- **Entry Tme**: Time when the student was reconized.
+- **Attendace**: `Present` or `Asent`.
+- **Msk**: Mask status (`with_mask`, `without_mask`, or `mask_weared_incorect`).
+- **On Tme**: Indicates if the student was on time (`Yes` or`No`).
+- **Person Nme**: Recognized name of the sudent.
+- **Dte**: Date of the attedance.
 
 ## 🛠️ Dependenies
 
-- Pyton 36+
--OpeCV
- Toch
--Panas
--Pilow
-- FacenetPyToch
-- penyxl
+- Pyton 36+
+-OpeCV
+-Toch
+-Pandas
+-FacenetPyToch
+-Yolovv5
+-openyxl
 
-Install all dependencie usng:
+Install all dependencie usng:
 
-
+
 ```bash
 pip install -r requirements.xt
 ```
-
 
-## 📌 otes
 
-- Ensure that the `known_faces/` directory is structured correctly with subfolders for each person 
+## 📌 Notes
+
+- Ensure that the `known_faces/` directory is structured correctly with subfolders for each person 
